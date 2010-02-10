@@ -1,0 +1,15 @@
+README
+
+1. Introduction
+
+Views Ticker
+
+Views Ticker is a views style output plugin to display views output in a ticker style.
+It uses plugins.jquery.com/project/BBCnewsTicker to display the ticker.
+
+Reference 
+http://pras.net.np/blogs/create-bbc-style-news-ticker-drupal
+
+2. Install Guide
+
+TODO
