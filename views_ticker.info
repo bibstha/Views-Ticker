@@ -1,0 +1,5 @@
+name = Views ticker
+description = Provides a bbc like news ticker style for views
+dependencies[] = views
+core = 6.x
+
