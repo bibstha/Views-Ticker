@@ -43,7 +43,7 @@ function template_preprocess_views_ticker_style_unformatted(&$vars) {
 
   // Include proper javascripts
   $module_path = drupal_get_path('module', 'views_ticker');
-  drupal_add_js("$module_path/js/jquery.newsTicker.js");
+  drupal_add_css("$module_path/css/li-scroller.css");
+  drupal_add_js("$module_path/js/jquery.li-scroller.1.0.js");
   drupal_add_js("$module_path/js/views_ticker.js");
-  
 }
