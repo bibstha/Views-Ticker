@@ -10,8 +10,7 @@ class views_ticker_plugin_style_unformatted extends views_plugin_style_default {
    */
   function options(&$options) {
     parent::options($options);
-    $options['startDelay'] = '';
-    $options['placeHolder'] = '';
+    $options['speed'] = '0.07';
   }
  
   /**
@@ -22,17 +21,11 @@ class views_ticker_plugin_style_unformatted extends views_plugin_style_default {
    */ 
   function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
-    $form['startDelay'] = array(
+    $form['speed'] = array(
       '#type' => 'textfield',
-      '#title' => t('Start Delay'),
-      //'#description' => t('Enter the url of the playlist to forward to, exclude forward or trailing slash'),
-      '#default_value' => $this->options['startDelay'],
-    );
-    $form['placeHolder'] = array(
-      '#type' => 'textfield',
-      '#title' => t('Start Delay'),
-      //'#description' => t('Enter the url of the playlist to forward to, exclude forward or trailing slash'),
-      '#default_value' => $this->options['placeHolder'],
+      '#title' => t('Speed'),
+      '#description' => t('Default speed is 0.07'),
+      '#default_value' => $this->options['speed'],
     );
   }
 
